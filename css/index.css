@@ -1,0 +1,418 @@
+/* banner */
+.banner a img{
+  width:100%;
+  vertical-align:top;
+}
+@media screen and (min-width:1080px) {
+  .banner .mobile-pic {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .banner .pc-pic {
+    display: none;
+  }
+}
+/* banner end */
+
+/* intro */
+
+.intro .pc-container{
+  width: 100%;
+}
+.intro .pc-container .title,.intro .pc-container .content {
+  width: 1080px;
+  margin: 0 auto;
+}
+.intro .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  border-bottom: #D1D1D1 1px solid;
+}
+.intro .pc-container .title span{
+  display: block;
+  width: 115px;
+  height: 50px;
+  border-bottom: #00A0E9 2px solid;
+}
+.intro .pc-container .img img{
+  width: 100%;
+}
+.intro .pc-container .content {
+  padding: 30px 0 100px;
+  position: relative;
+}
+.intro .pc-container .content span {
+  font-size: 16px;
+  line-height: 32px;
+}
+.intro .pc-container .content a {
+  position: absolute;
+  width: 220px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #00A0E9;
+  color: #fff;
+  text-align: center;
+  right: 0;
+  bottom: 0px;
+}
+.intro .pc-container .content a span{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 60px;
+}
+.intro .pc-container .content a span:after{
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 3px;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+@media screen and (min-width:1080px) {
+  .intro .mobile-container {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .intro .pc-container {
+    display: none;
+  }
+}
+.intro .mobile-container {
+  width: 100%;
+  position: relative;
+}
+.intro .mobile-container .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.intro .mobile-container .title img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 150px;
+}
+.intro .mobile-container .title span {
+  font-size: 20px;
+}
+.intro .mobile-container .title span b {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: #00A0E9;
+} 
+.intro .mobile-container .img {
+  height: 470px;
+}
+.intro .mobile-container img {
+  width: 100%;
+}
+.intro .mobile-container .content {
+  position: absolute;
+  width: 95%;
+  right: 0;
+  bottom: 0px;
+  padding: 30px 20px 25px;
+  color: #fff;
+  background-color: #1A384F;
+}
+.intro .mobile-container .content a {
+  display: block;
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  margin-top: 35px;
+  line-height: 30px;
+  background-color: #00A0E9;
+  color: #fff;
+}
+.intro .mobile-container .content a span:after{
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 3px;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+/* intro end*/
+/* manager */
+.manager .pc-container{
+  width: 100%;
+}
+
+@media screen and (min-width:1080px) {
+  .manager .mobile-container {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .manager .pc-container {
+    display: none;
+  }
+}
+
+.manager .pc-container .title, .manager .pc-container .content .picScroll{
+  width: 1080px;
+  margin: 0 auto;
+}
+.manager .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #D1D1D1 1px solid;
+}
+.manager .pc-container .title>span{
+  display: block;
+  width: 115px;
+  height: 50px;
+  border-bottom: #00A0E9 2px solid;
+}
+.manager .pc-container .title #pageState {
+  font-size: 12px;
+  line-height: 50px;
+}
+.manager .pc-container .title #pageState>span {
+  color: #00A0E9;
+}
+.manager .pc-container .content {
+  height: 600px;
+  padding: 40px 0;
+  background: url("../images/index/team_bg.png") no-repeat center center;
+}
+.manager .pc-container .content .picScroll {
+  position: relative;
+}
+.manager .pc-container .content .picScroll .bd dl{
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.manager .pc-container .content .picScroll .bd dt{
+  width: 220px;
+  height: 220px;
+}
+.manager .pc-container .content .picScroll .bd dt img {
+  width: 100%;
+  height: 100%;
+}
+.manager .pc-container .content .picScroll .bd dd {
+  flex: 1;
+  height: auto;
+  padding: 20px 0 0 30px;
+}
+.manager .pc-container .content .picScroll .bd .name {
+  height: 50px;
+}
+.manager .pc-container .content .picScroll .bd .name b{
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: normal;
+  border-bottom: 3px solid #00A0E9;
+}
+.manager .pc-container .content .picScroll .bd .name span {
+  font-size: 18px;
+  padding-left: 5px;
+}
+.manager .pc-container .content .picScroll .bd .name p {
+  padding-top: 30px;
+}
+.manager .pc-container .content .picScroll .hd ul {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  justify-content: center;
+}
+.manager .pc-container .content .picScroll .hd ul li {
+  width: 30px;
+  height: 12px;
+  overflow: hidden;
+  text-indent: 100px;
+  margin-right: 10px;
+  background-color: #D1D1D1;
+  cursor: pointer;
+}
+.manager .pc-container .content .picScroll .hd ul li.on{
+  background-color: #00A0E9
+}
+
+.manager .mobile-container {
+  width: 100%;
+  position: relative;
+}
+.manager .mobile-container .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.manager .mobile-container .title img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 150px;
+}
+.manager .mobile-container .title span {
+  font-size: 20px;
+}
+.manager .mobile-container .title span b {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: #00A0E9;
+} 
+.manager .mobile-container .content {
+  background-color: #F8F8F8;
+  padding: 20px 30px 40px;
+}
+.manager .mobile-container .content .picScroll .bd dt {
+  padding: 5px 30px;
+}
+.manager .mobile-container .content .picScroll .bd dt img {
+  width: 100%;
+}
+.manager .mobile-container .content .picScroll .bd .name b {
+  font-size: 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #00A0E9;
+}
+.manager .mobile-container .content .picScroll .bd .name span {
+  font-size: 14px;
+}
+.manager .mobile-container .content .picScroll .bd .name p {
+  padding-top: 15px;
+}
+.manager .mobile-container .content .picScroll .hd ul {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  justify-content: center;
+}
+.manager .mobile-container .content .picScroll .hd ul li {
+  width: 25px;
+  height: 8px;
+  overflow: hidden;
+  text-indent: 100px;
+  margin-right: 10px;
+  background-color: #D1D1D1;
+  cursor: pointer;
+}
+.manager .mobile-container .content .picScroll .hd ul li.on{
+  background-color: #00A0E9
+}
+/* manager end */
+
+/* organization */
+.organization .pc-container{
+  width: 1080px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:1080px) {
+  .organization .mobile-container {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .organization .pc-container {
+    display: none;
+  }
+}
+
+.organization .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #D1D1D1 1px solid;
+}
+.organization .pc-container .title>span{
+  display: block;
+  width: 115px;
+  height: 50px;
+  border-bottom: #00A0E9 2px solid;
+}
+.organization .pc-container .title #org-pageState {
+  font-size: 12px;
+  line-height: 50px;
+}
+.organization .pc-container .title #org-pageState>span {
+  color: #00A0E9;
+}
+
+.organization .pc-container .content {
+  padding: 10px 80px;
+  position: relative;
+}
+.organization .pc-container .content .bd>div {
+  min-height: 400px;
+}
+.organization .pc-container .content .bd>div dl {
+  width: 45%;
+  float: left;
+}
+.organization .pc-container .content .bd>div dl:last-child {
+  float: right;
+}
+.organization .pc-container .content .bd>div dl dt img{
+  width: 100%;
+}
+.organization .pc-container .content .bd>div dl dd p {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+  padding: 5px 0;
+}
+.organization .pc-container .content .bd>div dl dd a {
+  display: block;
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  background-color: #00A0E9;
+  color: #fff;
+  margin: 5px auto;
+}
+.organization .pc-container .content .hd{
+  width: 100%;
+  display: flex;
+  height: 32px;
+  top: 35%;
+  left: 0px;
+  justify-content: space-between;
+  position: absolute;
+}
+.organization .pc-container .content .hd .next, .organization .pc-container .content .hd .prev {
+  width: 20px;
+  height: 32px;
+  cursor: pointer;
+}
+.organization .pc-container .content .hd .next {
+  background: url('../images/index/arrow_left.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+.organization .pc-container .content .hd .prev {
+  background: url('../images/index/arrow_right.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+/* organization end */ 
