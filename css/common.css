@@ -140,8 +140,17 @@ body.open-menu {
   .scrolled-icon-menu {
     display: none !important;
   }
+  .footer .mobile-container {
+    display: none;
+  }
 }
 @media screen and (max-width:1080px) {
+  .footer .pc-container {
+    display: none;
+  }
+  .bottom-footer {
+    display: none;
+  }
   .navbar{
     height: 100px;
   }
@@ -218,3 +227,85 @@ body.open-menu {
   }
 }
 /* header end */
+/* footer */
+.footer {
+  width: 100%;
+  background-color: #1A384F;
+}
+.footer .pc-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.footer .pc-container .content {
+  padding: 40px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .pc-container .content .left,.footer .pc-container .content .right {
+  width: 45%;
+}
+.footer .pc-container .content .left {
+  padding-right: 5%;
+}
+.footer .pc-container .content .title {
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid #D1D1D1;
+}
+.footer .pc-container .content .title>span{
+  display: block;
+  width: 75px;
+  height: 40px;
+  border-bottom: #00A0E9 2px solid;
+}
+.footer .pc-container .content ul {
+  padding: 20px 0;
+}
+.footer .pc-container .content ul li {
+  color: #999999;
+  line-height: 28px;
+}
+.footer .pc-container .content ul li a {
+  cursor: pointer;
+}
+.footer .pc-container .content ul li a:hover {
+  color: #fff;
+}
+.footer .mobile-container .content {
+  padding: 20px;
+  min-height: 450px;
+  background: url('../images/index/img_down_bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.footer .mobile-container .content .box {
+  padding-bottom: 20px;
+}
+.footer .mobile-container .content .box .title{
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.footer .mobile-container .content .box .title b {
+  display: block;
+  margin-top: 10px;
+  width: 50px;
+  height: 2px;
+  background-color: #00A0E9;
+}
+.footer .mobile-container .content .box ul li {
+  color: #999999;
+  line-height: 28px;
+  font-size: 12px;
+}
+.footer .mobile-container .content .box:last-child .title{
+  padding-bottom: 10px;
+}
+.bottom-footer {
+  height: 50px;
+  line-height: 50px;
+}
+.bottom-footer p {
+  width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}

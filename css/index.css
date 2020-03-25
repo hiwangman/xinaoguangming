@@ -415,4 +415,149 @@
   background: url('../images/index/arrow_right.png') no-repeat center center;
   background-size: 100% 100%;
 }
+
+.organization .mobile-container {
+  width: 100%;
+  position: relative;
+}
+.organization .mobile-container .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.organization .mobile-container .title img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 300px;
+}
+.organization .mobile-container .title span {
+  font-size: 20px;
+}
+.organization .mobile-container .title span b {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: #00A0E9;
+} 
+.organization .mobile-container .content {
+  padding: 10px 20px 0px;
+}
+.organization .mobile-container .content .picScroll .bd dl {
+  margin-bottom: 25px;
+}
+.organization .mobile-container .content .picScroll .bd dt {
+  padding: 5px 30px 15px;
+}
+.organization .mobile-container .content .picScroll .bd dt img {
+  width: 100%;
+}
+.organization .mobile-container .content .picScroll .bd dd {
+  text-align: center;
+  font-size: 16px;
+}
+.organization .mobile-container .content .picScroll .hd ul {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  justify-content: center;
+}
+.organization .mobile-container .content .picScroll .hd ul li {
+  width: 25px;
+  height: 8px;
+  overflow: hidden;
+  text-indent: 100px;
+  margin-right: 10px;
+  background-color: #D1D1D1;
+  cursor: pointer;
+}
+.organization .mobile-container .content .picScroll .hd ul li.on{
+  background-color: #00A0E9
+}
 /* organization end */ 
+/* partner */
+.partner .pc-container{
+  width: 1080px;
+  margin: 0 auto 20px;
+}
+
+@media screen and (min-width:1080px) {
+  .partner .mobile-container {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .partner .pc-container {
+    display: none;
+  }
+}
+.partner .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #D1D1D1 1px solid;
+}
+.partner .pc-container .title>span{
+  display: block;
+  width: 115px;
+  height: 50px;
+  border-bottom: #00A0E9 2px solid;
+}
+.partner .pc-container .content ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.partner .pc-container .content ul li {
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+.partner .pc-container .content ul li:nth-child(3n) {
+  margin-right: 0;
+}
+.partner .pc-container .content ul li img {
+  width: 100%;
+}
+
+.partner .mobile-container {
+  width: 100%;
+  position: relative;
+}
+.partner .mobile-container .title {
+  text-align: center;
+  padding: 20px 0;
+}
+.partner .mobile-container .title img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 150px;
+}
+.partner .mobile-container .title span {
+  font-size: 20px;
+}
+.partner .mobile-container .title span b {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: #00A0E9;
+} 
+.partner .mobile-container .content {
+  padding: 10px 20px 30px;  
+}
+.partner .mobile-container .content ul {
+  padding: 0 30px;
+}
+.partner .mobile-container .content ul li {
+  margin-bottom: 20px;
+}
+.partner .mobile-container .content ul li img {
+  width: 100%;
+}
