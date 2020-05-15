@@ -1,0 +1,355 @@
+/* company-profile begin */
+@media screen and (min-width:1080px) {
+  .company-profile .mobile-container {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .company-profile .pc-container {
+    display: none;
+  }
+}
+.company-profile .pc-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.company-profile .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  border-bottom: #D1D1D1 1px solid;
+}
+.company-profile .pc-container .title span{
+  display: block;
+  width: 115px;
+  height: 50px;
+  border-bottom: #00A0E9 2px solid;
+}
+.company-profile .pc-container .content {
+  position: relative;
+  padding-bottom: 80px;
+}
+.company-profile .pc-container .content ul {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-profile .pc-container .content ul li {
+  flex-basis: 50%;
+}
+.company-profile .pc-container .content ul li dl {
+  height: 160px;
+  display: flex;
+}
+.company-profile .pc-container .content ul li dl dt {
+  align-self: center;
+}
+.company-profile .pc-container .content ul li dl dt img{
+  width: 100px;
+  height: 100px;
+}
+.company-profile .pc-container .content ul li dl dd {
+  flex: 1;
+  padding: 0 30px;
+}
+.company-profile .pc-container .content ul li dl dd p {
+  font-size: 18px;
+  color: #00A0E9;
+  padding-bottom: 20px;
+}
+.company-profile .pc-container .content ul li dl dd p::after {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #00A0E9;
+}
+.company-profile .pc-container .content a {
+  position: absolute;
+  width: 220px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #00A0E9;
+  color: #fff;
+  text-align: center;
+  right: 0;
+  bottom: 0px;
+}
+.company-profile .pc-container .content a span{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 60px;
+}
+.company-profile .pc-container .content a span:after{
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-top: 3px;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.company-profile .mobile-container .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.company-profile .mobile-container .title img {
+  display: block;
+  margin: 0 auto 15px;
+  height: 18px;
+}
+.company-profile .mobile-container .title span {
+  font-size: 20px;
+}
+.company-profile .mobile-container .title span b {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: #00A0E9;
+} 
+.company-profile .mobile-container .content {
+  padding: 0 20px 40px;
+  position: relative;
+}
+.company-profile .mobile-container .content ul li dl {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+  height: 120px;
+}
+.company-profile .mobile-container .content ul li dt {
+  display: flex;
+  align-items: center;
+}
+.company-profile .mobile-container .content ul li dl dt img {
+  width: 80px;
+}
+.company-profile .mobile-container .content ul li dl dd {
+  flex: 1;
+  line-height: 18px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
+.company-profile .mobile-container .content ul li:last-child dl dd {
+  border: 0;
+}
+.company-profile .mobile-container .content ul li dl dd p {
+  font-size: 15px;
+  color: #00A0E9;
+  padding-bottom: 10px;
+}
+.company-profile .mobile-container .content ul li dl dd p::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-top: 15px;
+  background-color: #00A0E9;
+}
+.company-profile .mobile-container .content a {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #00A0E9;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 0px;
+}
+.company-profile .mobile-container .content a span{
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.company-profile .mobile-container .content a span:after{
+  content: "";
+  width:0.5rem;
+  height: 0.5rem;
+  margin-top: 3px;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+/* company-profile end */
+
+/* team begin */
+@media screen and (min-width:1080px) {
+  .team .mobile-container {
+    display: none;
+  }
+}
+@media screen and (max-width:1080px) {
+  .team .pc-container {
+    display: none;
+  }
+}
+.team .pc-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.team .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  border-bottom: #D1D1D1 1px solid;
+}
+.team .pc-container .title span{
+  display: block;
+  width: 115px;
+  height: 50px;
+  border-bottom: #00A0E9 2px solid;
+}
+.team .pc-container .content .teamScroll ul {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+.team .pc-container .content .teamScroll ul li {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #999;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.team .pc-container .content .teamScroll ul li:hover,.team .pc-container .content .teamScroll ul .actived {
+  border: 3px solid #00A0E9;
+}
+.team .pc-container .content .teamScroll ul li img {
+  width: 100%;
+  transform: scale(1.05)
+}
+.team .pc-container .content #team-intro{
+  margin-top: 20px;
+  padding: 50px 80px;
+  color: #fff;
+  background-color: #1A384F;
+}
+
+.team .pc-container .content #team-intro dt {
+  font-size: 18px;
+}
+.team .pc-container .content #team-intro dt::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #00A0E9;
+}
+.team .pc-container .content #team-intro dt span {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.team .pc-container .content #team-intro dd {
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+
+.team .mobile-container .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.team .mobile-container .title img {
+  display: block;
+  margin: 0 auto 15px;
+  height: 18px;
+}
+.team .mobile-container .title span {
+  font-size: 20px;
+}
+.team .mobile-container .title span b {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: #00A0E9;
+}
+.team .mobile-container .content .teamScroll {
+  position: relative;
+  padding-bottom: 30px;
+}
+.team .mobile-container .content .teamScroll .bd ul {
+  display: flex !important;
+  /* justify-content: space-between; */
+  float: left;
+}
+.team .mobile-container .content .teamScroll .bd ul li {
+  width: 33%;
+}
+.team .mobile-container .content .teamScroll .bd ul li a{
+  /* float: left; */
+  display: block;
+  margin: 0 auto;
+  width: 95px;
+  height: 95px;
+  border: 3px solid #999;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.team .mobile-container .content .teamScroll ul li a:hover,.team .mobile-container .content .teamScroll ul .actived a {
+  border: 3px solid #00A0E9 !important;
+}
+.team .mobile-container .content .teamScroll .bd ul li img {
+  width: 100%;
+  transform: scale(1.05)
+}
+.team .mobile-container .content .teamScroll .hd ul {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  justify-content: center;
+}
+.team .mobile-container .content .teamScroll .hd ul li {
+  width: 20px;
+  height: 8px;
+  overflow: hidden;
+  text-indent: 100px;
+  margin-right: 10px;
+  background-color: #D1D1D1;
+  cursor: pointer;
+}
+.team .mobile-container .content .teamScroll .hd ul li.on{
+  background-color: #00A0E9
+}
+.team .mobile-container .content #mTeam-intro{
+  margin-top: 20px;
+  padding: 30px 18px;
+  color: #fff;
+  background-color: #1A384F;
+}
+
+.team .mobile-container .content #mTeam-intro dt {
+  font-size: 18px;
+}
+.team .mobile-container .content #mTeam-intro dt::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #00A0E9;
+}
+.team .mobile-container .content #mTeam-intro dt span {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.team .mobile-container .content #mTeam-intro dd {
+  line-height: 22px;
+  padding-top: 10px;
+}

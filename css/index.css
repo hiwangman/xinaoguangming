@@ -96,7 +96,7 @@
 .intro .mobile-container .title img {
   display: block;
   margin: 0 auto 15px;
-  width: 150px;
+  height: 18px;
 }
 .intro .mobile-container .title span {
   font-size: 20px;
@@ -111,7 +111,7 @@
 .intro .mobile-container .img {
   height: 470px;
 }
-.intro .mobile-container img {
+.intro .mobile-container .img img {
   width: 100%;
 }
 .intro .mobile-container .content {
@@ -262,7 +262,7 @@
 .manager .mobile-container .title img {
   display: block;
   margin: 0 auto 15px;
-  width: 150px;
+  height: 18px;
 }
 .manager .mobile-container .title span {
   font-size: 20px;
@@ -427,7 +427,7 @@
 .organization .mobile-container .title img {
   display: block;
   margin: 0 auto 15px;
-  width: 300px;
+  height: 18px;
 }
 .organization .mobile-container .title span {
   font-size: 20px;
@@ -537,7 +537,7 @@
 .partner .mobile-container .title img {
   display: block;
   margin: 0 auto 15px;
-  width: 150px;
+  height: 18px;
 }
 .partner .mobile-container .title span {
   font-size: 20px;
