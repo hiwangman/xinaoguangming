@@ -1,5 +1,16 @@
 /* banner */
-.banner a img{
+.banner {
+  position: relative;
+}
+.banner .icon {
+  position: absolute;
+  bottom: 20px;
+  width: 80px;
+  text-align: center;
+  left: 50%;
+  margin-left: 40px;
+}
+.banner>a img{
   width:100%;
   vertical-align:top;
 }
@@ -19,6 +30,7 @@
 
 .intro .pc-container{
   width: 100%;
+  position: relative;
 }
 .intro .pc-container .title,.intro .pc-container .content {
   width: 1080px;
@@ -42,12 +54,17 @@
   width: 100%;
 }
 .intro .pc-container .content {
-  padding: 30px 0 100px;
-  position: relative;
+  width: 1080px;
+  padding: 30px 0 0px;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  margin-left: -540px;
 }
 .intro .pc-container .content span {
   font-size: 16px;
   line-height: 32px;
+  color: #fff;
 }
 .intro .pc-container .content a {
   position: absolute;
@@ -58,7 +75,7 @@
   color: #fff;
   text-align: center;
   right: 0;
-  bottom: 0px;
+  bottom: -110px;
 }
 .intro .pc-container .content a span{
   font-size: 18px;
@@ -144,6 +161,57 @@
   transform: rotate(45deg);
 }
 /* intro end*/
+
+/* strategic */
+.strategic .pc-container{
+  width: 100%;
+  position: relative;
+}
+.strategic .pc-container .title,.strategic .pc-container .content {
+  width: 1080px;
+  margin: 0 auto;
+}
+.strategic .pc-container .title {
+  height: 50px;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+  box-sizing: content-box;
+  margin-bottom: 30px;
+  border-bottom: #D1D1D1 1px solid;
+}
+.strategic .pc-container .title span::after{
+  content: '';
+  margin-top: 26px;
+  display: block;
+  width: 115px;
+  height: 2px;
+  background-color: #00A0E9;
+}
+.strategic .pc-container .content {
+  background-color: #1A384F;
+  padding: 30px;
+}
+.strategic .pc-container .content ul li{
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+}
+.strategic .pc-container .content ul.bottom {
+  margin-top: 10px;
+}
+.strategic .pc-container .content ul.bottom li {
+  font-size: 16px;
+}
+.strategic .pc-container .content ul.top li::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 14px;
+  vertical-align: middle;
+  background-color: #00A0E9;
+}
 /* manager */
 .manager .pc-container{
   width: 100%;
@@ -212,10 +280,27 @@
 .manager .pc-container .content .picScroll .bd dd {
   flex: 1;
   height: auto;
-  padding: 20px 0 0 30px;
+  margin: 60px 0 0 30px;
 }
 .manager .pc-container .content .picScroll .bd .name {
   height: 50px;
+  display: flex;
+}
+.manager .pc-container .content .picScroll .bd .name p{
+  width: 220px;
+  padding-top: 10px;
+}
+.manager .pc-container .content .picScroll .bd .name ul {
+  /* margin-left: 80px; */
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50%;
+  flex-direction: column;
+}
+.manager .pc-container .content .picScroll .bd .name ul li {
+  line-height: 28px;
+  /* margin-left: 20px; */
 }
 .manager .pc-container .content .picScroll .bd .name b{
   font-size: 24px;
@@ -226,9 +311,6 @@
 .manager .pc-container .content .picScroll .bd .name span {
   font-size: 18px;
   padding-left: 5px;
-}
-.manager .pc-container .content .picScroll .bd .name p {
-  padding-top: 30px;
 }
 .manager .pc-container .content .picScroll .hd ul {
   display: flex;
@@ -515,9 +597,9 @@
   flex-wrap: wrap;
 }
 .partner .pc-container .content ul li {
-  width: 30%;
-  margin-right: 5%;
-  margin-bottom: 2%;
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 4%;
 }
 .partner .pc-container .content ul li:nth-child(3n) {
   margin-right: 0;

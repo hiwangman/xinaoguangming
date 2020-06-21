@@ -241,8 +241,14 @@ body.open-menu {
   display: flex;
   justify-content: space-between;
 }
+.footer .pc-container .content .qc-code {
+  width: 20%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
 .footer .pc-container .content .left,.footer .pc-container .content .right {
-  width: 45%;
+  width: 35%;
 }
 .footer .pc-container .content .left {
   padding-right: 5%;
@@ -254,7 +260,7 @@ body.open-menu {
 }
 .footer .pc-container .content .title>span{
   display: block;
-  width: 75px;
+  width: 85px;
   height: 40px;
   border-bottom: #00A0E9 2px solid;
 }
