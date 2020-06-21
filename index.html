@@ -351,6 +351,19 @@
       </div> -->
     <!-- </div> -->
 
+    <div class="activity">
+      <div class="pc-container">
+        <div class="title">
+          <span>项目活动 </span>
+          <a href="./activity.html">更多></a>
+        </div>
+        <div class="content">
+          <div id="article-list" class="projectList">
+
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="partner">
       <!-- PC端 -->
       <div class="pc-container">
@@ -481,6 +494,7 @@
     <script src="./js//zepto.min.js"></script>
     <script src="./js/popupImage.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/art-template.js"></script>
     <script>
       TouchSlide({ 
         slideCell:"#picScroll",
@@ -519,5 +533,34 @@
         })
       });
     </script>
+    <script id="articleList" type="text/html">
+      <ul>
+        {{each data}}
+          <li>
+              <div class="listImg">
+                <a href="{{'./activity-details.html?id='+$value.id}}"><img src="{{$value.img}}" alt=""></a>
+              </div>
+              <div class="listContent">
+                <h3>
+                  <p>{{$value.area}}</p>
+                  <p>{{$value.title}}</p>
+                </h3>
+                <p>{{$value.date}}</p>
+                <p>合作伙伴：{{$value.partner}}</p>
+                <p class="intro">
+                    {{$value.intro}}
+                </p>
+                <a href="{{'./activity-details.html?id='+$value.id}}">了解更多 ></a>
+              </div>
+          </li>
+        {{/each}}
+      </ul>
+    </script>
+    <script>
+        $.getJSON('./json/activities.json', function(data){
+          const html = template('articleList', { data: data.slice(0, 3) })
+          $('#article-list').html(html)
+        })
+      </script>
   </body>
 </html>
