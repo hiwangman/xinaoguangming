@@ -1,7 +1,7 @@
 [
   {
-    "item-name": "“山东临沂市贫困患者白内障手术补贴项目”探访",
-    "list-data": [
+    "name": "“山东临沂市贫困患者白内障手术补贴项目”探访",
+    "data": [
       {
         "title": "“山东临沂市贫困患者白内障手术补贴项目”探访",
         "img": "./images/participate/photo_wall/1.png"
@@ -18,8 +18,8 @@
     ]
   },
   {
-    "item-name": "盲童志愿者活动",
-    "list-data": [
+    "name": "盲童志愿者活动",
+    "data": [
       {
         "title": "盲童志愿者活动",
         "img": "./images/participate/photo_wall/5.png"
@@ -36,8 +36,8 @@
     ]
   },
   {
-    "item-name": "一 吨 计 划 One Ton Project环保绩效艺术计划可持续生活大展",
-    "list-data": [
+    "name": "一 吨 计 划 One Ton Project环保绩效艺术计划可持续生活大展",
+    "data": [
       {
         "title": "一 吨 计 划 One Ton Project环保绩效艺术计划可持续生活大展",
         "img": "./images/participate/photo_wall/9.png"

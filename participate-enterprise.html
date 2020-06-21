@@ -68,6 +68,7 @@
   <div class="participate">
     <div class="pc-container">
       <div class="projectList" id="list">
+
       </div>
     </div>
 
@@ -198,17 +199,17 @@
   <script src="./js/common.js"></script>
   <script src="./js/art-template.js"></script>
   <script id="listitem" type="text/html">
-    {{each data}}
+    {{each listdata}}
     <div class="titleCenter sub">
       <div class="title">
-        <span>{{$value.item-name}}</span>
+        <span>{{$value.name}}</span>
       </div>
     </div>
     <ul>
-      {{each $value.list-data $sub}}
+      {{each $value.data $sub}}
       <li>
         <div class="listImg">
-          <a href="#"><img src="{{ $sub.img }}" alt=""></a>
+          <a href="#"><img src="{{$sub.img}}" alt=""></a>
         </div>
         <div class="listContent">
           <span>{{$sub.title}}</span>
@@ -219,12 +220,10 @@
     {{/each}}
   </script>
   <script>
-    // $.getJSON('./json/photo-wall.json', function (data) {
-    //   const html = template('listitem', {
-    //     data: data
-    //   })
-    //   $('#list').html(html)
-    // })
+    $.getJSON('./json/photo-wall.json', function (data) {
+      const html = template('listitem', { listdata: data })
+      $('#list').html(html)
+    })
   </script>
 </body>
 
