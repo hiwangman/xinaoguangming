@@ -77,7 +77,8 @@ body.open-menu {
   align-items: center;
 }
 .navbar .container .navlist li {
-  padding: 10px 15px;
+  margin: 0 15px;
+  padding: 10px 0;
   height: 16px;
   box-sizing: content-box;
   line-height: 16px;
@@ -90,7 +91,7 @@ body.open-menu {
   color: #999999
 }
 .navbar .container .navlist li.actived, .navbar .container .navlist li:hover{
-  border-bottom: #00A0E9 1px solid;
+  border-bottom: #00A0E9 2px solid;
 } 
 .navbar .container .navlist li.actived a, .navbar .container .navlist li:hover a{
   color: #00A0E9;
