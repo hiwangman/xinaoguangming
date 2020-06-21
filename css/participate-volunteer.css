@@ -1,14 +1,29 @@
 @media screen and (min-width:1080px) {
-  .project-activities .mobile-container {
+  .participate .mobile-container {
     display: none;
   }
 }
 
 @media screen and (max-width:1080px) {
-  .project-activities .pc-container {
+  .participate .pc-container {
     display: none;
   }
 }
+
+/**        common          **/
+body {
+  /* background-color: rgb(255, 255, 255); */
+  /* background: #F8F8F8; */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-main {
+  color:#00A0E9;
+}
+/**        common end         **/
 
 .titleCenter {
   background-color: #fff;
@@ -31,31 +46,31 @@
   border-bottom: #00A0E9 4px solid;
 }
 
-.project-activities .pc-container {
+.participate .pc-container {
   width: 1080px;
   margin: 0 auto;
 }
 
-.project-activities .pc-container .nav p {
+.participate .pc-container .nav p {
   color: #999999;
   margin: 40px 0;
 }
 
-.project-activities .pc-container .nav p a {
+.participate .pc-container .nav p a {
   color: #999999;
 }
 
-.project-activities .pc-container .nav p a:last-child {
+.participate .pc-container .nav p a:last-child {
   color: #00A0E9;
 }
 
-.project-activities .pc-container .detailsImg {
+.participate .pc-container .detailsImg {
   width: 870px;
   height: 525px;
   margin: 0 auto;
 }
 
-.project-activities .pc-container .detailsImg img {
+.participate .pc-container .detailsImg img {
   width: 100%;
   height: 100%;
 }
@@ -114,16 +129,16 @@ article .content .erweima img {
 }
 
 
-.project-activities .mobile-container .title {
+.participate .mobile-container .title {
   text-align: center;
   padding: 30px 0;
 }
 
-.project-activities .mobile-container .title span {
+.participate .mobile-container .title span {
   font-size: 20px;
 }
 
-.project-activities .mobile-container .title span::after {
+.participate .mobile-container .title span::after {
   content: '';
   display: block;
   width: 50px;
@@ -132,35 +147,39 @@ article .content .erweima img {
   background-color: #00A0E9;
 }
 
-.project-activities .mobile-container .detailsImg {
+.participate .mobile-container .detailsImg {
   padding: 0 50px;
   margin: 0 auto;
 }
 
-.project-activities .mobile-container .detailsImg img {
+.participate .mobile-container .detailsImg img {
   width: 100%;
   height: 100%;
 }
 
-.project-activities .mobile-container .details {
+.participate .mobile-container .details {
   padding: 10px 20px;
 }
 
-.project-activities .mobile-container .details p {
+.participate .mobile-container .details p {
   line-height: 25px;
 }
 
-.project-activities .mobile-container .details p span {
+.participate .mobile-container .details p span {
   font-weight: bold;
 }
 
-.project-activities .mobile-container .erweima {
+.participate .mobile-container .erweima {
   width: 100px;
   height: 100px;
   margin: 20px auto 40px;
   text-align: center;
 }
 
-.project-activities .mobile-container .erweima img {
+.participate .mobile-container .erweima img {
   width: 100%;
+}
+
+.details p {
+  margin: 10px 0;
 }
