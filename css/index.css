@@ -591,11 +591,11 @@
   cursor: pointer;
 }
 .organization .pc-container .content .hd .next {
-  background: url('../images/index/arrow_left.png') no-repeat center center;
+  background: url('../images/about/arrow_left.png') no-repeat center center;
   background-size: 100% 100%;
 }
 .organization .pc-container .content .hd .prev {
-  background: url('../images/index/arrow_right.png') no-repeat center center;
+  background: url('../images/about/arrow_right.png') no-repeat center center;
   background-size: 100% 100%;
 }
 
