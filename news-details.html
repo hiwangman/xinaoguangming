@@ -59,63 +59,12 @@
         <p>您的位置：<a href="./index.html">首页</a> > <a href="./news.html">新闻故事</a> > <a
             href="./news-details.html">新闻故事详情</a></p>
       </div>
-      <div class="detailsTittle">
-        <p>“美丽校园”给乡村孩子带来第二个“家”的港湾</p>
-        <span>2020-01-08 10:03 撰稿：光明小使者</span>
-      </div>
-      <div class="detailsImg">
-        <img src="./images/news/news_stories_new_p_1.png" alt="">
-      </div>
-      <div class="detailesOne">
-        <p>
-          新华社南宁11月16日电（记者任耀庭）藤蔓缠绕的栅栏、悬吊的佛手瓜、金黄的百香果，草地上还放着十余把锄头。<br>
-
-          打造美丽校园，乡村小学校长杨鹏想到的是建一个这样的菜园子。<br>
-
-          在广西壮族自治区三江侗族自治县和平乡中心小学，360名学生的小乐园是这个占地一亩的生态植物园。<br>
-
-          每个班级在这里都有一块专属菜地。学生们每周有一节劳动课，由班主任带领到这里劳作。<br>
-
-          杨鹏说，学生不仅上这堂课很积极，课余时间也常到菜园看看自己的作物生长得怎么样了。<br>
-
-          菜园的收成学校不会留给食堂，“因为食堂的餐食比这丰盛得多咧”！<br>
-
-          2016年，杨鹏用一年1500元的价格向附近农民租了一块荒地。<br>
-
-          “我跟他说，这块地荒着也是荒着，不如拿给我做成菜园子，孩子开心，你也有收益。”<br>
-
-          “菜园进校园”得益于三江县实施的“美丽校园”项目。后者是“学校全方位环境改善项目”的延伸。
-
-        </p>
-      </div>
-      <div class="detailsImg">
-        <img src="./images/news/news_stories_p_2.png" alt="">
-      </div>
-      <div class="detailsTwo">
-        <p>
-          自2006年起，中国教育部与联合国儿童基金会合作推动“学校水、环境卫生与个人卫生项目”，旨在为欠发达的中国中西部儿童提供安全饮用水、改善环境卫生设施，并帮助他们养成良好的个人卫生习惯。
-        </p>
-        <p> 2013年，这一项目扩展到儿童健康、营养、环境绿化美化、种植园建设和灾害管理等方面，三江成为试点县之一。</p>
-
-        <p>
-          从2013年到2016年，十所学校示范厕所的设计和建设获项目资金150余万元。与此同时，三江县投入1180多万元，新建、改建108个学校卫生厕所。截至2018年9月的最新统计数据显示，三江县94%的学校有了卫生厕所，这一比例在试点前是18%。
-        </p>
-
-        <p>“厕所革命”成功了，但三江县并没有停下脚步。县教育局局长龙怀益说，学校全方位环境改善项目拓展到了学校建设、常规管理、文化特色、生态文明等方面，创建“美丽校园”。</p>
-
-        <p>这对和平乡中心小学来说，尤为有意义。因为所有学生都住校，而且超过五分之一是留守儿童。</p>
-
-        <p>“很多孩子家里只有老人，还有的孩子父亲外出打工，家里只有母亲，导致他们极度缺乏家长的教育和关爱，”六年级一班的班主任余彬说。</p>
-
-        <p>为支持和加强中西部地区农村义务教育，中国制定专门政策，招聘大学毕业生到中西部农村学校任教。27岁的余彬就是这样到和平乡中心小学任教的。</p>
-
-        <p> 担任班主任已经三年的她，白天上课，晚上检查学生睡眠情况。此外，她还要带领学生打扫厕所，定时检查寝室卫生，在兴趣课上客串艺术老师……“这让我的工作有些繁忙”。</p>
-
-        <p> “‘美丽校园’建设给了孩子们第二个‘家’”，她说。学生寝室一间有十个床位，配两个厕所，并定时供应洗漱热水。</p>
-
+      <div class="articleDetails" id="article-details">
 
       </div>
     </div>
+
+    <!-- mobile -->
     <div class="mobile-container">
       <div class="detailsTittle">
         <p>“美丽校园”给乡村孩子带来第二个“家”的港湾</p>
@@ -200,9 +149,7 @@
             <p>关注公众号</p>
           </div>
         </div>
-
       </div>
-
       <div class="mobile-container">
         <div class="content">
           <div class="box">
@@ -238,5 +185,45 @@
 <script src="./js//zepto.min.js"></script>
 <script src="./js/popupImage.js"></script>
 <script src="./js/common.js"></script>
+<script src="./js/art-template.js"></script>
+<script id="article" type="text/html">
+  
+  <div class="detailsTittle">
+    <p>{{data.title}}</p>
+  </div>
+  <div class="detailsImg">
+    <img src="{{data.banner_img}}" alt="">
+  </div>
+  <div class="detailesOne">
+    {{each data.detail $d}}
+    <p>{{$d}}</p>
+    {{/each}}
+  </div>
+  {{each data.detail_img $im}}
+  <div class="detailsImg">
+    <img src="{{$im}}" alt="">
+  </div>
+  {{/each}}
+</script>
+<script>
+  function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); //匹配目标参数
+    if (r != null) return unescape(r[2]);
+    return null; //返回参数值
+  }
+  $.getJSON('./json/news.json', function (data) {
+    var article = ''
+    data.forEach(function (currentValue) {
+      if (currentValue.id == getUrlParam('id')) {
+        article = currentValue
+      }
+    });
+    const html = template('article', {
+      data: article
+    })
+    $('#article-details').html(html)
+  })
+</script>
 
 </html>

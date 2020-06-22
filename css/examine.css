@@ -145,7 +145,7 @@
   border:2px solid rgba(230, 230, 230, 1);
 }
 
-.project-activities .pc-container .listContent a {
+.project-activities .pc-container .pdf.listContent a {
   width: 100%;
   display: flex;
   align-items: center;
@@ -156,7 +156,7 @@
   position: relative;
 }
 
-.project-activities .pc-container .listContent a::after {
+.project-activities .pc-container .pdf.listContent a::after {
   position: absolute;
   content: ' ';
   right: 20px;
