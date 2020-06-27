@@ -124,72 +124,19 @@
         </div>
       </div>
   </article>
-  <footer>
-    <div class="footer">
-      <!-- pc端 -->
-      <div class="pc-container">
-        <div class="content">
-          <div class="left">
-            <div class="title">
-              <span>联系我们<b></b></span>
-            </div>
-            <ul>
-              <li>邮箱：info@xinaofoundation.org.cn</li>
-              <li>电话：（86）21 61737069</li>
-              <li>地址：上海市黄浦区普育西路105号公益新天地4号楼210室</li>
-            </ul>
-          </div>
-          <div class="right">
-            <div class="title">
-              <span>成为志愿者<b></b></span>
-            </div>
-            <ul>
-              <li style="color: #fff">请加入我们，我们需要你</li>
-            </ul>
-          </div>
-          <div class="qc-code">
-            <img src="./images/index/qrcode.png">
-            <p>关注公众号</p>
-          </div>
-        </div>
 
-      </div>
+  <footer id="footer"></footer>
 
-      <div class="mobile-container">
-        <div class="content">
-          <div class="box">
-            <div class="title">
-              <span>联系我们<b></b></span>
-            </div>
-            <ul>
-              <li>邮箱：infosh@lianquan.org</li>
-              <li>电话：(86) 21 60146234，60146235，60146236，60146237</li>
-              <li>传真：(86) 21 60146234，60146235，60146236，60146237 ext.809</li>
-              <li>地址：上海市黄浦区普育西路105号公益新天地4号楼210室</li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="title">
-              <span><b></b></span>
-            </div>
-            <ul>
-              <li>© 2018 ～ 2020 上海新奥光明公益基金会</li>
-              <li>沪ICP备10030362号-3</li>
-              <li>沪公网安备 31010102002077号</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bottom-footer">
-      <p>© 2018 ～ 2020 上海新奥光明公益基金会 沪ICP备10030362号-3 沪公网安备 31010102002077号</p>
-    </div>
-  </footer>
-
-  <script src="./js/TouchSlide.1.1.js"></script>
   <script src="./js//zepto.min.js"></script>
-  <script src="./js/popupImage.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/art-template.js"></script>
+  <!-- 引入footer -->
+  <script>
+    $.get('./template/footer.html', function (data) {
+      var render = template.compile(data)
+      $('#footer').html(render)
+    })
+  </script>
 </body>
 
 </html>

@@ -255,13 +255,14 @@ body.open-menu {
   padding-right: 5%;
 }
 .footer .pc-container .content .title {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   border-bottom: 1px solid #D1D1D1;
 }
 .footer .pc-container .content .title>span{
-  display: block;
-  width: 85px;
+  display: flex;
+  align-items: center;
+  width: 134px;
   height: 40px;
   border-bottom: #00A0E9 2px solid;
 }
@@ -277,6 +278,11 @@ body.open-menu {
 }
 .footer .pc-container .content ul li a:hover {
   color: #fff;
+}
+.footer .pc-container .footer-icon{
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
 }
 .footer .mobile-container .content {
   padding: 20px;
