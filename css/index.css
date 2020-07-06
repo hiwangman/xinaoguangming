@@ -404,14 +404,35 @@
   /* margin-left: 20px; */
 }
 .manager .pc-container .content .picScroll .bd .name b{
-  font-size: 24px;
+  font-size: 27px;
   padding-bottom: 10px;
   font-weight: normal;
-  border-bottom: 3px solid #00A0E9;
+  position: relative;
+}
+.manager .pc-container .content .picScroll .bd .name b::after{
+  position: absolute;
+  content: ' ';
+  height: 4px;
+  width: 67px;
+  left: 0;
+  bottom: -7px;
+  background: #00A0E9;
 }
 .manager .pc-container .content .picScroll .bd .name span {
-  font-size: 18px;
-  padding-left: 5px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.manager .pc-container .content .picScroll .bd .bd-1 {
+  position: relative;
+}
+.manager .pc-container .content .picScroll .bd .bd-1::after {
+  position: absolute;
+  content: ' ';
+  height: 1px;
+  width: 830px;
+  bottom: -21px;
+  right: 0;
+  background: #D1D1D1;
 }
 .manager .pc-container .content .picScroll .hd ul {
   display: flex;
@@ -431,7 +452,7 @@
   cursor: pointer;
 }
 .manager .pc-container .content .picScroll .hd ul li.on{
-  background-color: #00A0E9
+  background-color: #1A384F
 }
 
 .manager .mobile-container {

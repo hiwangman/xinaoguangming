@@ -14,5 +14,18 @@
     ],
     "detail_img": ["./images/news/details/detail_1_2.png", "./images/news/details/detail_1_3.png"],
     "intro_img": "./images/news/news_stories_p_1.png"
+  },
+  {
+    "id": 2,
+    "time": "2019-12-22 12:03",
+    "author": "光明小使者",
+    "title": "视障者社会融合系列活动",
+    "banner_img": "./images/news/details/detail_2_1.jpg",
+    "intro": "2019年12月21日，基金会志愿者与战略合作伙伴一起，帮助上海市盲童学校学生进行视障者社会融合的系列活动。",
+    "detail": [
+      "2019年12月21日，基金会志愿者与战略合作伙伴一起，帮助上海市盲童学校学生进行视障者社会融合的系列活动。"
+    ],
+    "detail_img": ["./images/news/details/detail_2_2.jpg", "./images/news/details/detail_2_3.jpg", "./images/news/details/detail_2_4.jpg", "./images/news/details/detail_2_5.jpg", "./images/news/details/detail_2_6.jpg", "./images/news/details/detail_2_7.jpg"],
+    "intro_img": "./images/news/details/detail_2_1.jpg"
   }
 ]
